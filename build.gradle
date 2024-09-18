@@ -65,6 +65,19 @@ dependencies {
     testRuntimeOnly("org.seleniumhq.selenium:selenium-safari-driver:4.19.1")
     testImplementation("io.micronaut:micronaut-http-client")
 
+    //MyOracle
+    // Oracle Files
+    implementation files('lib/ojdbc11-full/ojdbc11.jar');
+    implementation files('lib/ojdbc11-full/ons.jar');
+    implementation files('lib/ojdbc11-full/oraclepki.jar');
+    implementation files('lib/ojdbc11-full/orai18n.jar');
+    implementation files('lib/ojdbc11-full/rsi.jar');
+    implementation files('lib/ojdbc11-full/simplefan.jar');
+    implementation files('lib/ojdbc11-full/ucp11.jar');
+    implementation files('lib/ojdbc11-full/xdb.jar');
+    //implementation files('lib/ojdbc11-full/xmlparserv2.jar');
+    //implementation files('lib/ojdbc11-full/xmlparserv2_sans_jaxp_services.jar');
+
 }
 
 application {
