@@ -15,4 +15,30 @@ out/
 
 # Custom
 grails-app/conf/application.groovy
+HELP.md
+/build/
+target-eclipse/
+bin/
+!gradle/wrapper/gradle-wrapper.jar
+grails-app/conf/DataSource.groovy
+db.properties
 
+### STS ###
+.apt_generated
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+.asscache
