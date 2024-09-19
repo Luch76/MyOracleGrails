@@ -1,0 +1,37 @@
+environments {
+    development {
+        dataSource {
+            url="jdbc:oracle:thin:@entry_from_tns_name?TNS_ADMIN=/Users/myuser/WalletFolder"
+            username="myoracle"
+            password=""
+        }
+    }
+    test {
+        dataSource {
+            url=""
+            username= ""
+            password= ""
+            logSql= false
+        }
+    }
+    production {
+        dataSource {
+            url="jdbc:oracle:thin:@entry_from_tns_name?TNS_ADMIN=/home/ubuntu/WalletFolder"
+            username="myoracle"
+            password=""
+            properties {
+                validationQuery = "SELECT 1 FROM DUAL"
+                testOnBorrow = true
+                testWhileIdle = true
+                testOnReturn = false
+                timeBetweenEvictionRunsMillis = 5000
+                minEvictableIdleTimeMillis = 60000
+                maxAge = 10 * 60000
+                maxWait = 10000
+                maxIdle = 25
+                maxActive = 50
+                initialSize = 5
+            }
+        }
+    }
+}
